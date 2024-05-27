@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radman Memory Card Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Radman Memory Card Game</h1>
+        <div id="info">
+            <p>Clicks: <span id="click-count">0</span></p>
+            <p>Pairs Left: <span id="pairs-left">3</span></p>
+            <p>Pairs Matched: <span id="pairs-matched">0</span></p>
+            <p>Timer: <span id="timer">0</span>s</p>
+        </div>
+        <div id="controls">
+            <button id="start-button">Start</button>
+            <button id="reset-button">Reset</button>
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <select id="theme">
+                <option value="light">Light Theme</option>
+                <option value="dark">Dark Theme</option>
+            </select>
+            <button id="power-up-button">Power-Up</button>
+        </div>
+    </header>
+    <div id="game_grid"></div>
+</body>
+
+</html>
